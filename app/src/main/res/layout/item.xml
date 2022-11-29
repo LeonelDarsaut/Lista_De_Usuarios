@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fondo2"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="10dp"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="200dp"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Nombre"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toTopOf="@+id/ola"
+        app:layout_constraintLeft_toRightOf="@+id/ola"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ola"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/fecha"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="fecha"
+        app:layout_constraintLeft_toLeftOf="@+id/nombre"
+        app:layout_constraintTop_toBottomOf="@+id/nombre"
+        />
+
+    <TextView
+        android:id="@+id/pais"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="pais"
+        app:layout_constraintLeft_toLeftOf="@+id/nombre"
+        app:layout_constraintTop_toBottomOf="@+id/fecha"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
